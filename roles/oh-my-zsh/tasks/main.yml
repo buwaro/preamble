@@ -1,6 +1,10 @@
 - name: Install zsh
   homebrew: name=zsh state=installed
   homebrew: name=zsh-completions state=installed
+  homebrew: name=zsh-syntax-highlighting state=installed
+
+  # add this line to zshrc for syntax highlighting
+  # source /path/to/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 - name: Download and install oh-my-zsh
   command: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
